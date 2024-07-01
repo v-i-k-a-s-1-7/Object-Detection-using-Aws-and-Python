@@ -14,7 +14,7 @@ This project leverages Amazon Web Services (AWS) Rekognition and Python to perfo
 - AWS SDK for Python (Boto3): To interact with AWS Rekognition and other AWS services.
 
 ## Getting Started
-Clone the Repository: git clone [https://github.com/yourusername/Object-Detection-using-AWS-and-Python.git](https://github.com/v-i-k-a-s-1-7/Object-Detection-using-Aws-and-Python.git)
+Clone the Repository: git clone [https://github.com/v-i-k-a-s-1-7/Object-Detection-using-AWS-and-Python.git](https://github.com/v-i-k-a-s-1-7/Object-Detection-using-Aws-and-Python.git)
 
 Install Dependencies: 
 - Use pip install Boto3
