@@ -15,7 +15,7 @@ with open('credentials.csv', 'r') as file:
 client = boto3.client('rekognition', region_name='ap-south-1',
                         aws_access_key_id=access_key_id, aws_secret_access_key=secret_access_key)
 
-photo = 'cats.jpg'
+photo = 'cars.jpg'
 
 with open(photo, 'rb') as image_file:
     source_bytes = image_file.read()
@@ -49,12 +49,12 @@ for label in detect_objects['Labels']:
                     )
             draw.line(points, width=5, fill = "#e60202")
 
-            shape = [(left - 2, top - 25), (width + 2 + left, top)]
+            shape = [(left - 2, top - 35), (width + 2 + left, top)]
             draw.rectangle(shape, fill = "#e60202")
 
             font = ImageFont.truetype("arial.ttf", 20)
 
-            draw.text((left + 80, top - 25), label["Name"], font=font, fill='#ffffff')
+            draw.text((left + 40, top - 25), label["Name"], font=font, fill='#ffffff')
 
 
 image.show()
